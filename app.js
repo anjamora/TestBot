@@ -4,7 +4,7 @@ var builder = require('botbuilder');
 
 // Setup Restify Server
 var server = restify.createServer();
-server.listen(process.env.PORT || 3000, function() 
+server.listen(process.env.PORT || 3978, function() 
 {
    console.log('%s listening to %s', server.name, server.url); 
 });
@@ -13,7 +13,7 @@ server.listen(process.env.PORT || 3000, function()
 var connector = new builder.ChatConnector
 ({ appId: '55720c7c-4f1b-45b3-8f4e-0f806650ec56', appPassword: 'yDkkFev7AUQgHQd9xMgvXq5' }); 
 var bot = new builder.UniversalBot(connector);
-//server.post('/api/messages', connector.listen());
+server.post('http://testbot-aj.azurewebsites.net', connector.listen());
 server.get(/.*/, restify.serveStatic({ 'directory': '.', 'default': 'index.html' }));
 
 // Create bot dialogs
