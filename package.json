@@ -1,0 +1,28 @@
+{
+  "name": "testbot",
+  "version": "1.0.0",
+  "description": "Build a test bot in Node.js on Microsoft Bot Framework.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anjamora/TestBot.git"
+  },
+  "keywords": [
+    "bot",
+    "teams",
+    "slack"
+  ],
+  "author": "Anthony Jamora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anjamora/TestBot/issues"
+  },
+  "homepage": "https://github.com/anjamora/TestBot#readme",
+  "dependencies": {
+    "botbuilder": "^3.6.0",
+    "restify": "^4.3.0"
+  }
+}
