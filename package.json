@@ -1,5 +1,5 @@
 {
-  "name": "testbot",
+  "name": "testbot-aj",
   "version": "1.0.0",
   "description": "Build a test bot in Node.js on Microsoft Bot Framework.",
   "main": "app.js",
