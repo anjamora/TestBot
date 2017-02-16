@@ -15,7 +15,7 @@ var connector = new builder.ChatConnector
 
 var bot = new builder.UniversalBot(connector);
 server.post('http://testbot-aj.azurewebsites.net/api/messages', connector.listen());
-//server.get(/.*/, restify.serveStatic({ 'directory': '.', 'default': 'index.html' }));
+server.get(/.*/, restify.serveStatic({ 'directory': '.', 'default': 'index.html' }));
 
 // Create bot dialogs
 bot.dialog('/', function (session) {
