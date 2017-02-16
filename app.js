@@ -14,7 +14,7 @@ var connector = new builder.ChatConnector
 ({ appId: '55720c7c-4f1b-45b3-8f4e-0f806650ec56', appPassword: 'yDkkFev7AUQgHQd9xMgvXq5' }); 
 var bot = new builder.UniversalBot(connector);
 server.post('http://testbot-aj.azurewebsites.net', connector.listen());
-server.get(/.*/, restify.serveStatic({ 'directory': '.', 'default': 'index.html' }));
+//server.get(/.*/, restify.serveStatic({ 'directory': '.', 'default': 'index.html' }));
 
 // Create bot dialogs
 bot.dialog('/', function (session) {
