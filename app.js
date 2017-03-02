@@ -19,5 +19,5 @@ server.get(/.*/, restify.serveStatic({ 'directory': '.', 'default': 'index.html'
 
 // Create bot dialogs
 bot.dialog('/', function (session) {
-    session.send("Hello World");
+    session.send("Hello Dynatrace");
 });
